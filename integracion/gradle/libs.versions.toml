@@ -1,0 +1,27 @@
+[versions]
+jms-api = "3.1.0"
+artemis = "2.41.0"
+gson = "2.11.0"
+jaxb-api = "4.0.2"
+jaxb-runtime = "4.0.5"
+jaxws-api = "4.0.2"
+cxf = "4.1.3"
+asm = "9.8"
+logback = "1.5.18"
+slf4j = "2.0.17"
+
+[libraries]
+jakarta-jms-api = { module = "jakarta.jms:jakarta.jms-api", version.ref = "jms-api" }
+artemis-jakarta-client = { module = "org.apache.activemq:artemis-jakarta-client", version.ref = "artemis" }
+gson = { module = "com.google.code.gson:gson", version.ref = "gson" }
+jaxb-api = { module = "jakarta.xml.bind:jakarta.xml.bind-api", version.ref = "jaxb-api" }
+jaxb-runtime = { module = "org.glassfish.jaxb:jaxb-runtime", version.ref = "jaxb-runtime" }
+jaxws-api = { module = "jakarta.xml.ws:jakarta.xml.ws-api", version.ref = "jaxws-api" }
+cxf-jaxws = { module = "org.apache.cxf:cxf-rt-frontend-jaxws", version.ref = "cxf" }
+cxf-http = { module = "org.apache.cxf:cxf-rt-transports-http", version.ref = "cxf" }
+asm = { module = "org.ow2.asm:asm", version.ref = "asm" }
+slf4j-api = { module = "org.slf4j:slf4j-api", version.ref = "slf4j" }
+logback-classic = { module = "ch.qos.logback:logback-classic", version.ref = "logback" }
+
+[bundles]
+logging = ["slf4j-api", "logback-classic"]

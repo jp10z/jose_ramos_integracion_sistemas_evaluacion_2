@@ -1,0 +1,36 @@
+# Gradle
+.gradle/
+**/.gradle/
+**/build/
+
+# Compiled and packaged Java artifacts
+*.class
+*.jar
+!**/gradle/wrapper/gradle-wrapper.jar
+
+# IDE and editor files
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+.classpath
+.project
+.settings/
+out/
+
+# Local configuration and secrets
+.env
+.env.*
+!.env.example
+local.properties
+**/application-local.properties
+**/application-secret.properties
+/TiendaWeb/src/main/resources/application.properties
+*.pem
+*.key
+
+# Logs and operating system files
+*.log
+Thumbs.db
+.DS_Store
